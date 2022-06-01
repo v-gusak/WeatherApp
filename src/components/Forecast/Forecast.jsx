@@ -7,19 +7,20 @@ import CurrentDay from '../CurrentDay';
 import CurrentDayDescription from '../CurrentDayDescription';
 import UpcomingDaysForecast from '../UpcomingDaysForecast';
 
-import styles from './Forecast.module.css';
+// import styles from './Forecast.module.css';
+import '../../App.css';
 
-const Forecast = ({ forecast }) => (
-    <Container className={styles.box}>
+const Forecast = ({ forecast, theme }) => (
+    <Container className={`box-${theme}`}>
         <Row>
             <Col xs={12} md={4}>
-                <div className={styles.card}>
+                <div className={`card-${theme}`}>
                     <CurrentDay {...forecast.currentDay} />
                 </div>
             </Col>
             <Col xs={12} md={8} className="d-flex flex-column justify-content-between">
                 <CurrentDayDescription forecast={forecast.currentDayDetails} />
-                <UpcomingDaysForecast days={forecast.upcomingDays} />
+                <UpcomingDaysForecast days={forecast.upcomingDays} theme={theme} />
             </Col>
         </Row>
     </Container>

@@ -1,0 +1,177 @@
+.dark {
+    background-color: #343d4b;
+    transition: background-color 200ms linear;
+    color: #ffffff;
+}
+
+.light {
+    background-color: #ffffff;
+    transition: background-color 200ms linear;
+    color: #343d4b;
+}
+
+.App.dark {
+    height: 100vh;
+}
+
+.App.light {
+    height: 100vh;
+}
+
+.button-dark {
+    border: none;
+    border-radius: 100px;
+    padding: 0.65rem;
+    background-image: linear-gradient(5deg, #a9bcbd 10%, #8d8df8 100%);
+    color: var(--main-text-color);
+    font-weight: 700;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    line-height: initial;
+    width: 90px;
+    height: 38px;
+}
+
+.button-dark:hover {
+    color: var(--main-text-color);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.button-light {
+    border: none;
+    border-radius: var(--main-border-radius);
+    padding: 0.65rem;
+    background-image: linear-gradient(135deg, #040d2bc4 10%, #2727eb 100%);
+    color: var(--main-text-color);
+    font-weight: 700;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    line-height: initial;
+    width: 90px;
+    height: 38px;
+}
+
+.button-light:hover {
+    color: var(--main-text-color);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.card-light {
+    border-radius: var(--main-border-radius);
+    color: white
+}
+
+.card-dark {
+    border-radius: var(--main-border-radius);
+    color: white;
+}
+
+.box-light {
+    border-radius: var(--main-border-radius);
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    background-color: #006eff3d;
+    color: #343d4b;
+    width: 85%;
+    max-width: 675px;
+    min-height: 300px;
+}
+
+.box-dark {
+    border-radius: var(--main-border-radius);
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color--card);
+    color: white;
+    width: 85%;
+    max-width: 675px;
+    min-height: 300px;
+}
+
+.boX-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 45px;
+    -webkit-box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color--card);
+    color: var(--main-text-color);
+    width: 85%;
+    max-width: 675px;
+    min-height: 280px;
+    margin-top: 40px;
+}
+
+.boX-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 45px;
+    -webkit-box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 24px 5px #006eff3d;
+    background-color: #006eff3d;
+    color: var(--main-text-color);
+    width: 65%;
+    max-width: 675px;
+    min-height: 280px;
+    margin-top: 40px;
+}
+
+.boxSecond-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 100px;
+    box-shadow: 0 0 24px 5px #006eff3d;
+    background-color: #006eff3d;
+    color: var(--main-text-color);
+    width: 85%;
+    max-width: 460px;
+    min-height: 80px;
+    margin-bottom: 50px;
+    padding-top: 11px;
+}
+
+.boxSecond-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color--card);
+    color: var(--main-text-color);
+    width: 85%;
+    max-width: 480px;
+    min-height: 80px;
+    margin-bottom: 50px;
+    padding-top: 11px;
+}
+
+.weekList-dark {
+    list-style-type: none;
+    padding: 0;
+    -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    border-radius: var(--secondary-border-radius);
+    background-color: var(--bg-color--card);
+}
+
+.weekList-light {
+    list-style-type: none;
+    padding: 0;
+    -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    border-radius: var(--secondary-border-radius);
+    background-color: #56f4ff09;
+    color: #343d4b;
+}

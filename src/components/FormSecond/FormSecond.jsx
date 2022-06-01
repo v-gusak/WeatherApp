@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './FormSecond.module.css';
+import '../../App.css';
 
-const Form = ({submitSearch}) => {
+const Form = ({submitSearch, theme, toggleTheme}) => {
     const [location, setLocation] = useState('');
     
     const onSubmit = (e) => {
@@ -27,6 +28,12 @@ const Form = ({submitSearch}) => {
             <button type="submit" className={styles.button} onClick={onSubmit}>
                 SEARCH
             </button>
+
+            <div className='btn-theme'>
+                <button type="button" onClick={toggleTheme} className={`button-${theme}`}>
+                     THEME
+                </button>
+            </div>
         </form>
     );
 };

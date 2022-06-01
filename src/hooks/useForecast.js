@@ -4,11 +4,8 @@ import axios from 'axios';
 import getCurrentDayForecast from '../helpers/getCurrentDayForecast';
 import getCurrentDayDetailedForecast from '../helpers/getCurrentDayDetailedForecast';
 import getUpcomingDaysForecast from '../helpers/getUpcomingDaysForecast';
-// import { ResponsiveEmbed } from "react-bootstrap";
 
 const GET_WEATHER = 'https://api.weatherbit.io/v2.0/forecast/daily?key=1181fb6387ed4793931fc6e78a341948&days=5';
-
-// const BASE_URL = 'https://www.metaweather.com/api/location';
 
 const useForecast = () => {
     const [isError, setError] = useState(false)

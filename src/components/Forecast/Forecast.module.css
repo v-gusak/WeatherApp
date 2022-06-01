@@ -1,5 +1,11 @@
-.card {
+.card-light {
     border-radius: var(--main-border-radius);
+    color: #343d4b;
+}
+
+.card-dark {
+    border-radius: var(--main-border-radius);
+    color: white;
 }
 
 .box {
