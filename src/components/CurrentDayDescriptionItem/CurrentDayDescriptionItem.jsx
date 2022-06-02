@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CurrentDayDescriptionItem = ({ name, value, unit }) => (
+const CurrentDayDescriptionItem = ({ name, value, unit, t }) => (
     <div className="d-flex justify-content-between">
-        <p className="mb-0 font-weight-bolder text-uppercase">{name}</p>
+        <p className="mb-0 font-weight-bolder text-uppercase">{t(name)}</p>
         <p className="mb-0">
-            {value} {unit}
+            {t(value)} {t(unit)}
         </p>
     </div>
 );

@@ -10,17 +10,17 @@ import UpcomingDaysForecast from '../UpcomingDaysForecast';
 // import styles from './Forecast.module.css';
 import '../../App.css';
 
-const Forecast = ({ forecast, theme }) => (
+const Forecast = ({ forecast, theme, t }) => (
     <Container className={`box-${theme}`}>
         <Row>
             <Col xs={12} md={4}>
                 <div className={`card-${theme}`}>
-                    <CurrentDay {...forecast.currentDay} />
+                    <CurrentDay {...forecast.currentDay} t={t} />
                 </div>
             </Col>
             <Col xs={12} md={8} className="d-flex flex-column justify-content-between">
-                <CurrentDayDescription forecast={forecast.currentDayDetails} />
-                <UpcomingDaysForecast days={forecast.upcomingDays} theme={theme} />
+                <CurrentDayDescription forecast={forecast.currentDayDetails} t={t} />
+                <UpcomingDaysForecast days={forecast.upcomingDays} theme={theme} t={t} />
             </Col>
         </Row>
     </Container>

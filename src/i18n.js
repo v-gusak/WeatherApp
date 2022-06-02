@@ -8,6 +8,9 @@ i18n
   .use(LanguageDetector)
   .use (initReactI18next)
   .init({
+    react: { 
+      useSuspense: false //   <---- this will do the magic
+    },
     fallbackLng: 'en',
     whitelist: ['en', 'ua'],
     debug: true,

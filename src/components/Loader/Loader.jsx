@@ -1,17 +1,15 @@
 import React from 'react';
 
-import styles from './Loader.module.css';
-
 const Loader = () => (
-    <div className={styles.box}>
+    <div>
         <svg
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="54px"
-            height="60px"
+            width="40px"
+            height="40px"
             viewBox="0 0 24 30"
         >
             <rect x="0" y="0" width="3" height="10" fill="#333">

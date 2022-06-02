@@ -10,7 +10,7 @@ const currentDayForecast = data => [
         unit: '%',
     },
     {
-        name: 'wind',
+        name: 'wind speed',
         value: Math.round(data.wind_spd),
         unit: 'm/s',
     },

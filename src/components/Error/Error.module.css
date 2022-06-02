@@ -1,3 +1,5 @@
 .error {
     bottom: 0;
+    color: rgb(253, 55, 55);
+    font-weight: 600;
 }

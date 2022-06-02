@@ -1,7 +1,8 @@
 .input {
     border-radius: var(--main-border-radius);
     margin-bottom: 1rem;
-    margin-right: 2%;
+    margin-right: 3%;
+    width: 190px;
 }
 
 .button {
@@ -16,7 +17,7 @@
     line-height: initial;
     width: 60%;
     height: 38px;
-    margin-right: 2%;
+    margin-right: 5px;
 }
 
 .button:hover {

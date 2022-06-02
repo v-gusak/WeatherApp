@@ -2,7 +2,7 @@ import moment from 'moment';
 
 const getCurrentDayForecast = (data, city, country) => ({
     weekday: moment(data.datetime).format('dddd'),
-    date: moment(data.datetime).format('MMMM Do'),
+    date: moment(data.datetime).format('MMMM D'),
     location: city + ", " + country,
     temperature: Math.round(data.temp),
     feelsLike: Math.round(data.app_max_temp),

@@ -1,3 +1,8 @@
 {
-    "Feels": "Feels"
+    "THEME": "THEME",
+    "SEARCH": "SEARCH",
+    "Location": "Location",
+    "Weather": "Weather",
+    "Forecast": "foreacast",
+    "Feels like": "Feels like "
 }

@@ -1,3 +1,8 @@
+.fix {
+    margin-bottom: 365px;
+    margin-left: 560px;
+}
+
 .dark {
     background-color: #343d4b;
     transition: background-color 200ms linear;
@@ -30,6 +35,7 @@
     line-height: initial;
     width: 90px;
     height: 38px;
+    margin-right: 15px;
 }
 
 .button-dark:hover {
@@ -51,6 +57,7 @@
     line-height: initial;
     width: 90px;
     height: 38px;
+    margin-right: 15px;
 }
 
 .button-light:hover {
@@ -75,7 +82,7 @@
     -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
     background-color: #006eff3d;
-    color: #343d4b;
+    color: #4b3434;
     width: 85%;
     max-width: 675px;
     min-height: 300px;
@@ -102,7 +109,7 @@
     box-shadow: 0 0 24px 7px rgba(0, 0, 0, 0.2);
     background-color: var(--bg-color--card);
     color: var(--main-text-color);
-    width: 85%;
+    width: 65%;
     max-width: 675px;
     min-height: 280px;
     margin-top: 40px;
@@ -124,6 +131,16 @@
     margin-top: 40px;
 }
 
+.boX-dark svg path,
+.boX-dark svg rect {
+    fill: #65b6ee;
+}
+
+.boX-light svg path,
+.boX-light svg rect {
+    fill: #65b6ee;
+}
+
 .boxSecond-light {
     display: flex;
     align-items: center;
@@ -134,9 +151,9 @@
     background-color: #006eff3d;
     color: var(--main-text-color);
     width: 85%;
-    max-width: 460px;
+    max-width: 330px;
     min-height: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-top: 11px;
 }
 
@@ -151,10 +168,20 @@
     background-color: var(--bg-color--card);
     color: var(--main-text-color);
     width: 85%;
-    max-width: 480px;
+    max-width: 330px;
     min-height: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-top: 11px;
+}
+
+.boxSecond-dark svg path,
+.boxSecond-dark svg rect {
+    fill: #65b6ee;
+}
+
+.boxSecond-light svg path,
+.boxSecond-light svg rect {
+    fill: #65b6ee;
 }
 
 .weekList-dark {
@@ -174,4 +201,9 @@
     border-radius: var(--secondary-border-radius);
     background-color: #56f4ff09;
     color: #343d4b;
+}
+
+.langButtons {
+    margin-bottom: 30px;
+    margin-top: 30px;
 }

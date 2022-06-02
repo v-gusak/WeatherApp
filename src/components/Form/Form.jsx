@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Form.module.css';
 
-const Form = ({submitSearch}) => {
+const Form = ({submitSearch, t}) => {
     const [location, setLocation] = useState('');
     
     const onSubmit = (e) => {
@@ -18,14 +18,14 @@ const Form = ({submitSearch}) => {
                 aria-label="location"
                 type="text"
                 className={`${styles.input} form-control`}
-                placeholder="Search for location"
+                placeholder={t("Location")}
                 required
                 value={location}
                 onChange={e => setLocation(e.target.value)}
             />
 
             <button type="submit" className={styles.button} onClick={onSubmit}>
-                SEARCH
+                {t("SEARCH")}
             </button>
         </form>
     );
